@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+    background: #111111;
+}
+
+.welcome {
+    color: #cccccc;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 75pt;
+    animation: appear 2s;
+    /* margin: auto; */
+    float: left;
+    margin-top: 10%;
+    /* margin-left */
+}
+
+@keyframes appear {
+    0% {opacity:10%;}
+    100% {opacity: 100%;}
+}
