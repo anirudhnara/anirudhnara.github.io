@@ -1,0 +1,28 @@
+
+<h1>Cretaceous-Palogene Extinction</h1>
+<button id="ASong" onClick="playPause()">
+    <audio
+      src="assets/audio/Cretaceous-Palogene extinction.m4a"
+      autoplay
+      loop
+    ></audio>
+    Play audio
+</button>
+<p id="pp"></p>
+  
+<script>
+var aud = document.getElementById("ASong").children[0];
+var isPlaying = false;
+aud.pause();
+
+function playPause() {
+    if (isPlaying) {
+    aud.pause();
+    document.getElementById("pp").innerHTML = "Paused...";
+    } else {
+    aud.play();
+    document.getElementById("pp").innerHTML = "Playing...";
+    }
+    isPlaying = !isPlaying;
+}
+</script>
