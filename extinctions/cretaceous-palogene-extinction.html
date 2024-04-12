@@ -1,15 +1,18 @@
-
+<style>
+    button {
+        font-size: 100pt
+    }
+</style>
 <h1>Cretaceous-Palogene Extinction</h1>
 <button id="ASong" onClick="playPause()">
     <audio
       src="audio/Cretaceous-Palogene extinction.m4a"
       autoplay
-      loop
     ></audio>
     Play audio
 </button>
 <p id="pp"></p>
-  
+
 <script>
 var aud = document.getElementById("ASong").children[0];
 var isPlaying = false;
